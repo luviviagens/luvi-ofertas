@@ -1,0 +1,9 @@
+
+document.querySelectorAll('.copiar').forEach(function(b){
+  b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.alvo), t=el.textContent, orig=b.textContent;
+    function feito(){b.textContent='Copiado';b.classList.add('ok');setTimeout(function(){b.textContent=orig;b.classList.remove('ok')},1800)}
+    function selecionar(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Texto selecionado: copie';}
+    try{navigator.clipboard.writeText(t).then(feito,selecionar)}catch(e){selecionar()}
+  });
+});

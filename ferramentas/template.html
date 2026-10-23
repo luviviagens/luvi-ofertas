@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><style>
+:root{--navy:#021436;--navy2:#0a2559;--blue:#0a68c4;--gold:#f2b04f;--white:#fff}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--navy);font-family:Poppins,sans-serif;color:#fff}
+.card{position:relative;width:1080px;height:1920px;overflow:hidden}
+.photo{position:absolute;inset:0;background:url('destino.jpg') center 35%/cover}
+.shade{position:absolute;inset:0;background:
+  linear-gradient(180deg,rgba(2,20,54,.70) 0%,rgba(2,20,54,.05) 18%,rgba(2,20,54,.15) 28%,rgba(2,20,54,.55) 36%,rgba(2,20,54,.96) 58%,var(--navy) 100%)}
+.top{position:absolute;top:150px;left:64px;right:64px;display:flex;justify-content:space-between;align-items:flex-start}
+.logobox{background:rgba(2,20,54,.92);border-radius:28px;padding:18px 26px;box-shadow:0 10px 30px rgba(0,0,0,.3)}.logo{height:150px;display:block}
+.chip{background:var(--gold);color:var(--navy);font-weight:800;font-size:28px;letter-spacing:.06em;text-transform:uppercase;padding:14px 26px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.chip b{font-weight:900}
+.content{position:absolute;left:64px;right:64px;bottom:230px}
+.kicker{text-shadow:0 2px 12px rgba(0,0,0,.6);font-size:30px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+h1{font-size:118px;line-height:1.02;font-weight:800;letter-spacing:-.02em;text-shadow:0 4px 30px rgba(0,0,0,.35)}
+.hotel{text-shadow:0 2px 14px rgba(0,0,0,.5);font-size:34px;font-weight:500;margin-top:12px;opacity:.95}
+.hotel strong{font-weight:700}
+.facts{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.fact{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.10);border:1.5px solid rgba(255,255,255,.22);border-radius:18px;padding:14px 20px;font-size:26px;font-weight:500}
+.fact svg{width:30px;height:30px;flex:none;stroke:var(--gold);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.price{margin-top:34px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
+.from{font-size:26px;opacity:.75}
+.from s{opacity:.9}
+.inst{display:flex;align-items:baseline;gap:10px;line-height:1}
+.inst .x{font-size:44px;font-weight:700}
+.inst .big{font-size:140px;font-weight:800;color:var(--gold);letter-spacing:-.03em}
+.inst .cents{font-size:44px;font-weight:800;color:var(--gold)}
+.cash{font-size:26px;margin-top:10px;opacity:.9}
+.off{flex:none;width:180px;height:180px;border-radius:50%;background:var(--blue);display:flex;flex-direction:column;align-items:center;justify-content:center;border:4px solid var(--gold);box-shadow:0 10px 30px rgba(0,0,0,.35);transform:rotate(-8deg)}
+.off .n{font-size:76px;font-weight:900;line-height:.9}
+.off .n small{font-size:40px}
+.off .t{font-size:24px;font-weight:700;letter-spacing:.12em}
+.cta{margin-top:36px;display:flex;align-items:center;justify-content:center;gap:14px;background:#fff;color:var(--navy);font-size:34px;font-weight:800;border-radius:999px;padding:26px 30px}
+.cta svg{width:38px;height:38px;fill:#25d366}
+.legal{margin-top:22px;font-size:19px;opacity:.6;text-align:center;line-height:1.4}
+</style></head>
+<body><div class="card">
+  <div class="photo"></div><div class="shade"></div>
+  <div class="top">
+    <div class="logobox"><img class="logo" src="data:image/png;base64,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" alt="Luvi Viagens"></div>
+    <div class="chip">✦ <b>{{SELO}}</b></div>
+  </div>
+  <div class="content">
+    <div class="kicker">{{TIPO}}</div>
+    <h1>{{DESTINO_HTML}}</h1>
+    <div class="hotel"><strong>{{HOTEL}}</strong> · {{REGIME}}</div>
+    <div class="facts">
+      <div class="fact"><svg viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>{{SAIDA}}</div>
+      <div class="fact"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>{{DATAS}}</div>
+    </div>
+    <div class="price">
+      <div>
+        <div class="from">{{LINHA_DE}}</div>
+        <div class="inst"><span class="x">{{N_PARC}}x R$</span><span class="big">{{PARC_INT}}</span><span class="cents">,{{PARC_CENT}}</span></div>
+        <div class="cash">{{LINHA_AVISTA}}</div>
+      </div>
+      {{SELO_DESCONTO}}
+    </div>
+    <div class="cta"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>Chame a Luvi e garanta o seu</div>
+    <div class="legal">{{LEGAL}}</div>
+  </div>
+</div></body></html>
